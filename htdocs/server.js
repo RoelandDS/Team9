@@ -2,14 +2,14 @@ var data = { "name": "Team 9", "members": [{"name": "Glenn"},{"name": "Robin"}] 
 var http = require('http');
 var request = require('request');
 var express = require('express');
-var port = process.env.PORT || 4000;
+var port = 4000;
 
 var app = express();
 
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8888');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4000');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
