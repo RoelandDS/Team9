@@ -2,7 +2,6 @@ var data = { "name": "Team 9", "members": [{"name": "Glenn"},{"name": "Robin"}] 
 var http = require('http');
 var request = require('request');
 var express = require('express');
-var port = 4000;
 
 var app = express();
 
@@ -45,4 +44,5 @@ app.get('/', function(req, res)
     res.send(data);
 });
 
-app.listen(port,process.env.IP);
+app.listen(4000);
+console.log("Listening on port 4000...");
